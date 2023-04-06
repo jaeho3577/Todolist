@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    /*linear-gradient : 그라데이션주기*/
+    background: linear-gradient(to bottom, #f8fafa 0%, #46c8f0);
+    
+}
+
+
+.wrapper{
+    margin:  auto;
+    max-width: 700px;
+    width: 100%;
+    background: rgb(122, 224, 153);
+    padding: 25px;
+    border-radius: 50px;
+}
+.wrapper header{        /* #To do list*/
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 15px;
+    text-align: center;
+    
+}
+
+/*.wrapper안에 있는 것을 부를때(태그 설정 방법은 무궁무진)*/
+.wrapper .inputField{       /* 할 일 추가하기  */
+    display: flex;  
+    margin: 5px auto 20px ; 
+    height: 45px;
+    width: 700px;                 
+    
+}
+
+.inputField input{   /*할 일 추가하기 박스*/
+    color: rgb(12, 12, 12);
+    padding-left: 15px;
+    width: 600px;
+    height: 100%;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;  /*inputbox 클릭시 테두리 안보이게*/
+}
+.inputField button{    /*  +   */
+    width: 50px;
+    height: 100%;
+    font-size: 30px;
+    border: none;
+    border-radius: 3px;
+    background: rgb(187, 159, 159);
+    cursor: pointer;  
+}
+.wrapper .Todolist{
+    display: flex;
+}
+.Todolist li{
+    width: 650px;
+    list-style: none;
+    line-height: 40px; /*수직 가운데 정렬 : 보통 height랑 같은 숫자를 쓴다*/
+    position: relative;
+    margin-bottom: 5px;
+    text-indent: 15px; /*들여쓰기*/
+    background: rgb(249, 250, 250);
+    border-radius: 3px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.wrapper .footer{
+    font-weight: 600px;
+    text-indent: 15px;
+    display: flex;
+    width: auto;
+    margin-top: 10px;
+    justify-content: right;
+}
+.footer button{
+    color: rgb(211, 200, 181);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 6px 10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background: rgb(66, 78, 20);
+}
+.footer button:hover{
+    color : rgb(17, 34, 2);
+    background-color: rgb(32, 226, 74);
+}
+
